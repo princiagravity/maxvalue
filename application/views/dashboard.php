@@ -7,7 +7,7 @@
                <div class="col-lg-12">
                   <div class="row">
                      <?php foreach($dash_count as $detail){?>
-                     <div class="col-sm-4">
+                     <div class="col-sm-6">
                         <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
                            <div class="iq-card-body tasks-box">
                               <div class="d-flex align-items-center">                                 
@@ -15,13 +15,20 @@
                                     <i class="ri-file-shield-line"></i>
                                  </a> -->
                                  <div>
-                                    <h3><?php echo $detail->name?></h3>
+                                    <h3 class="text-success mb-1"><?php echo strtoupper($detail->name);?></h3>
                                     <div class="row">
                                     <?php foreach($detail->productdet as $prod){?>
-                                       <div class="col-sm-4">
-                                    <h6 class="text-danger"><?php echo $prod->name ?></h6>
-                                    <h4 class="text-secondary"> <?php echo $prod->count?></h4>
+                                    <div class="col-6 border rounded mr-2 mb-2 shadow">
+                                    <h7 class="text-danger"><u><?php echo strtoupper($prod->name); ?></u></h7>
+                                  
+                                    <div class="text-secondary p-1 rounded "><?php echo 'Rs.'.$prod->bussum?></div>
+                                    
+                                    <p class="text-dark"> <?php echo"TC: ".$prod->count?></p>
+                                   
+                                    
                                        </div>
+                                      
+                                   
                                     <?php }?>
                                     </div>
                                  </div>

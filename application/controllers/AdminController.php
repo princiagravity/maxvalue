@@ -111,6 +111,11 @@ class AdminController extends CI_Controller {
 			$pagetitle['pagetitle']='Customers List';
 			//redirect('under-construction');
 		 }
+		 else if($main_page=='canvasser-search')
+		 {
+			$data['companylist']=$this->admin_model->get_company_list();
+			$pagetitle['pagetitle']='Canvasser Search';
+		 }
 		 else if($main_page=='business-upload')
 		 {
 			if($id != "")

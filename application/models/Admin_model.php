@@ -441,7 +441,7 @@ class Admin_model extends CI_Model{
 
 	public function get_product_business($company_id)
 	{
-		$result=$this->db->query("select count(*) as count,tbl_product_details.name from tbl_business_details join tbl_product_details on tbl_product_details.id=tbl_business_details.product_id where tbl_business_details.company_id=$company_id and tbl_business_details.status !='Deleted' GROUP by tbl_business_details.product_id")->result();
+		$result=$this->db->query("select count(*) as count,tbl_product_details.name,sum(tbl_business_details.investment_amount) as bussum from tbl_business_details join tbl_product_details on tbl_product_details.id=tbl_business_details.product_id where tbl_business_details.company_id=$company_id and tbl_business_details.status !='Deleted' GROUP by tbl_business_details.product_id")->result();
 		return $result;
 	}
 

@@ -35,7 +35,15 @@
                         </ul>
                      </li>
 					
-					 
+                     <li>
+                        <a href="#canvas-info" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-user-3-line"></i>
+<span>Canvassers</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <ul id="canvas-info" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                          
+                          
+                           <li><a href="<?php echo site_url('canvasser-search')?>">Canvasser Search</a></li>
+                        </ul>
+                     </li>
                      <li><a href="<?php echo site_url('business-upload')?>" class="iq-waves-effect"><i class="ri-chat-upload-line"></i><span>Business Upload</span></a></li>
                      <li><a href="<?php echo site_url('incentive-upload')?>" class="iq-waves-effect"><i class="ri-chat-upload-line"></i><span>Incentive Upload</span></a></li>
                     <!--  <li>

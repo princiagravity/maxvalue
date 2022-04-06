@@ -61,6 +61,7 @@ $route['logout']                                    =   'AdminController/user_lo
 
 $route['customer-search']                           =   'AdminController/main_page/customer-search';
 $route['customers-list']                            =   'AdminController/main_page/customers-list';
+$route['canvasser-search']                          =   'AdminController/main_page/canvasser-search';
 $route['business-upload']                           =   'AdminController/main_page/business-upload';
 $route['incentive-upload']                          =   'AdminController/main_page/incentive-upload';
 /* $route['renewal-incentive']                         =   'AdminController/main_page/renewal-incentive'; */
